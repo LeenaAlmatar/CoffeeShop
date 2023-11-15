@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lively Grounds Coffee House</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(69, 17, 17, 0.8);
+    }
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="images/Logo.png" alt="Logo">
+    </a>
+    <nav class="navebar">
+      <a href="#Home">Home</a>
+      <a href="#About">Our Best Seller</a>
+      <a href="#Menu">Menu</a>
+      <a href="#playwithus">Play With Us</a>
+      <a href="#HOW">How we Make it</a>
+      <a href="#Contat">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="home" id="Home">
+    <div class="content">
+      <h3>Lively Grounds Coffee House<span></span></h3>
+      <p>Welcome to our coffee house haven!
+        Dive into a world of rich flavors and aromatic blends on our website,
+        where we're passionate about delivering the finest coffee experiences.
+Explore our curated selections, brewing tips, and join us on a journey to savor the perfect cup.</p>
+    </div>
+  </section>
+
+  <section class="about" id="About">
+    <h1 class="heading">Best <span>Seller</span></h1>
+    <video width="500" height="350" controls>
+      <source src="images/VideoBefore.mp4" type="video/mp4">
+    </video>
+    <video width="500" height="350" controls>
+      <source src="images/VideoAfter.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section class="menu" id="Menu">
+    <h1 class="heading">Our <span>Menu</span></h1>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="coffee-container">
+          <div class="coffee-details">
+          <br>
+          <br>
+          <h3>Espresso</h3>
+          <br>
+          <br>
+          <img src="images/Espresso.jpg" class="img" style="width:280px;height:350px;">
+          <br>
+          <br>
+          <p class="price">8 SAR</p>
+          <br>
+          <br>
+          </div>
+</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="coffee-container">
+          <div class="coffee-details">
+          <br>
+          <br>
+          <h3>Latte</h3>
+          <br>
+          <br>
+          <img src="images/Latte.jpg" class="img" style="width:280px;height:350px;">
+          <br>
+          <br>
+              <p class="price">18 SAR</p>
+              <br>
+              <br>
+          </div>
+</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="coffee-container">
+          <div class="coffee-details">
+          <br>
+          <br>
+          <h3>Flat White</h3>
+          <br>
+          <br>
+          <img src="images/FlatWhite.jpg" class="img" style="width:280px;height:350px;">
+          <br>
+          <br>
+          <p class="price">16 SAR</p>
+          <br>
+          <br>
+          </div>
+      </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="coffee-container">
+          <div class="coffee-details">
+          <br>
+          <br>
+          <h3>Cappuccino</h3>
+          <br>
+          <br>
+          <img src="images/Cappuccino.jpg" class="img" style="width:280px;height:350px;">
+          <br>
+          <br>
+          <p class="price">18 SAR</p>
+          <br>
+          <br>
+          </div>
+      </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="coffee-container">
+          <div class="coffee-details">
+          <br>
+          <br>
+          <h3>Black</h3>
+          <br>
+          <br>
+          <img src="images/Black.jpg" class="img" style="width:280px;height:350px;">
+          <br>
+          <br>
+          <p class="price">12 SAR</p>
+          <br>
+          <br>
+          </div>
+      </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="coffee-container">
+          <div class="coffee-details">
+          <br>
+          <br>
+          <h3>Cold Brew</h3>
+          <br>
+          <br>
+          <img src="images/ColdBrew.jpg" class="img" style="width:280px;height:350px;">
+          <br>
+          <br>
+          <p class="price">12 SAR</p>
+          <br>
+          <br>
+          </div>
+      </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+  </section>
+
+  <section class="contact" id="playwithus">
+    <h1 class="heading"><span>Play</span> With<span> Us</span></h1>
+    <a href="https://www.culinaryschools.org/kids-games/coffee-shop/">
+      <img src="images/PlayWithUs.png" alt="HTML tutorial" style="width:600px;height:450px;display: block;margin: 0 auto;">
+    </a>
+  </section>
+
+  <section class="about" id="HOW">
+    <h1 class="heading">How <span>We</span> Make <span>It</span></h1>
+    <div>
+      <video width="500" height="350" controls>
+        <source src="images/CoffeeVideo.mp4" type="video/mp4">
+      </video>
+      <br>
+      <br>
+      <br>
+      <h1 class="heading">Before Editing</h1>
+      <br>
+      <img src="images/home-img.jpeg" class="img" style="width:400px;height:400px;display: block;">
+      <br>
+    </div>
+  </section>
+
+  <section class="contact" id="Contat">
+    <h1 class="heading"><span>contact</span>us</h1>
+    <div class="row">
+      <form action="">
+        <h3>get in touch</h3>
+        <div class="inputBox">
+          <span class="fas fa-user"></span>
+          <input type="text" placeholder="Name">
+        </div>
+        <div class="inputBox">
+          <span class="fas fa-envelope"></span>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="inputBox">
+          <span class="fas fa-phone"></span>
+          <input type="text" placeholder="Phone">
+        </div>
+        <input type="submit" value="contact now" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="links">
+      <a href="#Home">Home</a>
+      <a href="#About">Our Best Seller</a>
+      <a href="#Menu">Menu</a>
+      <a href="#playwithus">Play With Us</a>
+      <a href="#HOW">How we Make it</a>
+      <a href="#Contat">Contact Us</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</body>
+</html>
